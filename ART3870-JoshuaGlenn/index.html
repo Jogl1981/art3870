@@ -11,27 +11,47 @@
   </head>
 
   <body>
+
     <section class="row">
-      <h1 class="columns small-12 large-6"> Headline </h1>
-      <img src="http://placekitten.com/g/200/300" alt="" class="columns small-12 large-6"/>
+      <h1 class="title columns small-12 large-6"> Joshua Glenn </h1>
     </section>
 
-
-
-    <section>
-      Welcome to page 47. I just wanted to say: <span id="greeting">hello!</span>
+    <section class="row">
+      <img class="josh" src="pics/jogl1.jpg" alt="" class="columns small-12 large-6"/>
     </section>
 
-    <script type ="text/javascript">
+    <section class="row">
+      <span id = "greeting">Greetings, </span> citizen!
+    </section>
+
+    <script language="JavaScript">
       var myDate = new Date();
-      var myHour = myDate.getHours();
-      /* The line above creates a Date() object in the browser and assigns it
-      to the variable called myDate. */
-      if ( myHour > 12 ) {
-        document.getElementById('greeting').innerHTML = "Good Afternoon!";
+      // Get date and store it in myDate.
+      if ( myDate.getHours() < 12 )
+        {
+          document.getElementById('greeting').innerHTML = "Good morning,";
+        }
+        //If the hour is less than 12, display "Good morning."
 
-        console.log("Line 33 saying hello");  //console.log is simply a debugger.  USe it to test where an error occurs.
-      }
+        else
+        if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+        {
+          document.getElementById('greeting').innerHTML = "Good afternoon,";
+        }
+        //If the hour is between 12 and 5, display "Good afternoon."
+
+        else
+        if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+        {
+          document.getElementById('greeting').innerHTML = "Good evening,";
+        }
+        //If the time is after 5, display "Good evening."
+
+        else
+        {
+          document.getElementById('greeting').innerHTML = "That's a stupid time,";
+        }
+        //If there is some sort of weirdness, display "That's a stupid time."
 
 
     </script>
