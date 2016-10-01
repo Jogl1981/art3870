@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
   </head>
 
   <body>
@@ -21,7 +22,7 @@
     </section>
 
     <section class="row">
-      <span id = "greeting">Greetings, </span> citizen!
+      <span id = "greeting">Greetings! </span>
     </section>
 
     <script language="JavaScript">
@@ -29,27 +30,27 @@
       // Get date and store it in myDate.
       if ( myDate.getHours() < 12 )
         {
-          document.getElementById('greeting').innerHTML = "Good morning,";
+          document.getElementById('greeting').innerHTML = "Good morning!";
         }
         //If the hour is less than 12, display "Good morning."
 
         else
         if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
         {
-          document.getElementById('greeting').innerHTML = "Good afternoon,";
+          document.getElementById('greeting').innerHTML = "Good afternoon!";
         }
         //If the hour is between 12 and 5, display "Good afternoon."
 
         else
         if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
         {
-          document.getElementById('greeting').innerHTML = "Good evening,";
+          document.getElementById('greeting').innerHTML = "Good evening!";
         }
         //If the time is after 5, display "Good evening."
 
         else
         {
-          document.getElementById('greeting').innerHTML = "That's a stupid time,";
+          document.getElementById('greeting').innerHTML = "That's a stupid time!";
         }
         //If there is some sort of weirdness, display "That's a stupid time."
 

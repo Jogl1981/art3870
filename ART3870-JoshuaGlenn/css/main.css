@@ -4,3 +4,7 @@
 .josh {
   border-radius: 400px;
 }
+#greeting {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 2em;
+}
