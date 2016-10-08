@@ -1,0 +1,14 @@
+.sticky {
+  background-color: gray;
+}
+
+nav>ul {
+  text-align: right;
+  list-style-type: none;
+  background-color: gray;
+}
+nav>ul>li {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
