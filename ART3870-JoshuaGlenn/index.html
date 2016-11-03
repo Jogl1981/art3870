@@ -5,32 +5,90 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <META NAME="Author" CONTENT="Joshua Glenn">
-    <title>Foundation for Sites</title>
+    <title>Joshua Glenn</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="pics/me.png">
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navcode.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
   </head>
 
   <body>
 
-    <section class="row">
-      <img class="josh" src="pics/jogl1.jpg" alt="" class="columns small-12 large-6"/>
-    </section>
 
-    <section class="row">
-      <h1 class="title columns small-12 large-6"> Joshua Glenn </h1>
-    </section>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Current Projects</a>
+          <ul>
+            <li><a href="bistro/index.html"> The Bistro </a></li>
+            <li><a href="p1slides.html"> Pecha Kucha </a></li>
+            <li><a href="sprite.html"> Sprite Animation </a></li>
+            <li><a href="https://github.com/Jogl1981/art3870.git"> Github </a></li>
+          </ul>
+        </li>
+        <li><a href="#">Resume</a>
+          <ul>
+            <li><a href="#">item a lonng submenu</a></li>
+            <li><a href="#">item</a>
+              <ul>
+                <li><a href="#">Ray</a></li>
+                <li><a href="#">Veronica</a></li>
+                <li><a href="#">Bushy</a></li>
+                <li><a href="#">Havoc</a></li>
+              </ul>
+            </li>
+            <li><a href="#">item</a></li>
+            <li><a href="#">item</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Rants</a>
+          <ul>
+            <li><a href="#">item</a></li>
+            <li><a href="#">item</a></li>
+            <li><a href="#">item</a></li>
+            <li><a href="#">item</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
 
     <section class="row">
       <span id = "greeting">Greetings! </span>
     </section>
 
     <section class="row">
+      <h1 class="title columns small-12 medium-12 large-12"> Joshua Glenn </h1>
+      <h2 class="title columns small-12 medium-12 large-12"> Graphic and Web Designer </h2>
+    </section>
+
+    <section class="row">
+      <img class="josh" src="pics/jogl1.jpg" alt="" class="columns small-12 large-6"/>
+    </section>
+
+
+
+    <section class="row">
       <p> <a href="bistro/index.html"> The Bistro </a> </p>
     </section>
+
     <section class="row">
       <p> <a href="p1slides.html"> Pecha Kucha </a> </p>
+    </section>
+
+    <section class="row">
+      <p> <a href="sprite.html"> Sprite Animation </a> </p>
+    </section>
+
+    <section class="row">
+      <p> <a href="https://github.com/Jogl1981/art3870.git"> Github </a> </p>
     </section>
 
     <script language="JavaScript">
@@ -61,8 +119,6 @@
           document.getElementById('greeting').innerHTML = "That's a stupid time!";
         }
         //If there is some sort of weirdness, display "That's a stupid time."
-
-
     </script>
 
     <script src="js/vendor/jquery.js"></script>
