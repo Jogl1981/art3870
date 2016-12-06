@@ -1,0 +1,205 @@
+/*Background color and text*/
+body {
+  color: yellow;
+  background-color: black;
+}
+/*End*/
+
+/*Centers page as a whole*/
+#wrapper {
+  width:1000px;
+  margin:0 auto;
+}
+/*End*/
+
+/*So everywhere gets stars*/
+section {
+  height: auto;
+  background-image:url("../images/starsglow1.gif");
+}
+/*End*/
+
+/*Two IDs*/
+#one>p, #two>p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-indent: 50px;
+  font-size: 2em;
+}
+/*End*/
+
+/*Mutual effects for Star Destroyer overtaking Blockade Runner*/
+#sd, #br {
+  position: relative;
+}
+/*End*/
+
+#sd {
+  z-index: 11;
+  margin-left: -200px;
+}
+
+#br {
+  z-index: 9;
+  margin-left: 50px;
+
+}
+
+/*All P Tages*/
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-indent: 50px;
+  font-size: 1.5em;
+}
+/*End*/
+
+/*Millenium Falcon Figure*/
+figure#MF {
+position: fixed;
+top: 350px;
+left: 50%;
+margin-left:-36px;
+z-index:10;
+transform: rotate(180deg);
+}
+/*End*/
+
+
+
+/*Text divs*/
+section>div
+{
+    margin: 20px;
+    padding: 50px;
+    width: 800px;
+    height: auto;
+    text-shadow: 1px 1px #ff0000;
+    -webkit-transition: all 1s ease; transition: all 1s ease;
+}
+/*End*/
+
+/*Class to have opacity at 0*/
+.hideme
+{
+    opacity:0;
+}
+/*End*/
+
+/*Class to have opacity at 1*/
+.showme {
+  opacity:1!important;
+}
+/*End*/
+
+/*Rotation animation for Tatooine*/
+figure#tat>img {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  z-index:100;
+  -webkit-animation-name: spin;
+    -webkit-animation-duration: 50000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 50000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 50000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/*End*/
+
+/*Alternating paragraphs Z-Index for Falcon flight over and under*/
+.evens {
+  position: relative;
+  z-index: 1;
+}
+
+.odds {
+  position: relative;
+  z-index: 100;
+}
+/*End*/
+
+/*Rotation animation for Yavin*/
+figure#yavin>img {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  z-index:100;
+  -webkit-animation-name: spin;
+    -webkit-animation-duration: 100000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 100000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 100000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/*End*/
+
+/*Death Star Position*/
+#ds {
+  position: relative;
+}
+/*End*/
